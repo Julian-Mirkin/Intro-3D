@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2265352844438397389}
   - component: {fileID: 114186326813353132}
   - component: {fileID: 1711160693691348524}
+  - component: {fileID: 114726407528973146}
   m_Layer: 0
   m_Name: Caja
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5662519806668841648}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.39043, y: 1, z: 2.446256}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -59,6 +60,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060160ffc75d0be48a923d8a4e6e49b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  mercaderiaScript: {fileID: 0}
 --- !u!54 &1711160693691348524
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75,6 +78,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &114726407528973146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662519806668841648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f22e995abfdaff41a9e7ed640660340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePoints: 10
 --- !u!65 &4986842503575072455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100,6 +116,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060160ffc75d0be48a923d8a4e6e49b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  mercaderiaScript: {fileID: 0}
+--- !u!114 &4575231971219720520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6868022968238011113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f22e995abfdaff41a9e7ed640660340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePoints: 0
 --- !u!1001 &6868022968238044233
 PrefabInstance:
   m_ObjectHideFlags: 0
