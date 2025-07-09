@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class InteractionArea : MonoBehaviour
 {
-    public GameObject UIInteractionMessague;
     public bool canInteract;
+    public GameObject UIInteractionMessague;
     public MercaderiaScript mercaderia;
+
+    public ScoreManager scoreManager;
 
     private void Start()
     {
         UIInteractionMessague.SetActive(false);
+
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     private void Update()
@@ -20,6 +24,7 @@ public class InteractionArea : MonoBehaviour
             if (canInteract)
             {
                 Destroy(mercaderia.gameObject);
+                scoreManager.addScore(mercaderia.scorePoints);
                 EndInteraction();
             }
         }
