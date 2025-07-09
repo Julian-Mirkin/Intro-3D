@@ -15,7 +15,7 @@ public class InteractionArea : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.W))
         {
             if (canInteract)
             {

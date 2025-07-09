@@ -16,9 +16,20 @@ public class Destruir : MonoBehaviour
         Debug.Log("Contacto");
         if (collision.gameObject.name == "Player")
         {
+            Debug.Log("¡Colisión con el jugador detectada!");
             Destroy(gameObject);
             healthManager.TakeDamage(10);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+{
+
+    if (other.CompareTag("Player"))
+    {
+        healthManager.TakeDamage(10);
+        Destroy(gameObject);
+    }
+}
 
 }
